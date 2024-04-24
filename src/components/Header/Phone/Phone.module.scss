@@ -1,0 +1,16 @@
+@import "styles/vars";
+@import "styles/mixins";
+
+.link {
+    display: inline-block;
+    font-size: 10px;
+    border: 1.01px solid rgba(18, 18, 18, 0.2);
+    border-radius: 201px;
+    @include transition(border-color, color);
+    padding: 12px 14px;
+
+    &:is(:hover, :focus) {
+        border-color: $osnovniy;
+        color: $osnovniy;
+    }
+}

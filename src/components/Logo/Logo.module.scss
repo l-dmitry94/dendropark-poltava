@@ -1,0 +1,19 @@
+@import "styles/vars";
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.text {
+    max-width: 159px;
+    font-family: $second-family;
+    font-weight: 700;
+    line-height: 0.875;
+    letter-spacing: -0.02em;
+
+    &Color {
+        color: $link;
+    }
+}

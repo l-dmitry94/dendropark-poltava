@@ -1,0 +1,24 @@
+@import "styles/vars";
+@import "styles/mixins";
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link {
+    display: inline-block;
+    line-height: 1.5;
+    color: $text-main;
+    @include transition(color);
+    padding: 4px 0;
+
+    &:is(:hover, :focus) {
+        color: $osnovniy;
+    }
+
+    &:global(.active) {
+        color: $osnovniy;
+    }
+}
